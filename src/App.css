@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+:root {
+  --content-width: 800px;
+  --content-spacing: 20px 0;
+  --box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%),
+    0px 1px 3px 0px rgb(0 0 0 / 12%);
+  --text-gray: #000000ed;
+  --bg-scheduled: #caf0f8;
+  --bg-confirmed: #ffa62b;
+  --bg-at-restaurant: #00b4d8;
+  --bg-picked-up: #ffd670;
+  --bg-at-client: #ab92bf;
+  --bg-delivered: #0ead69;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  margin: 0px;
+  padding: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-weight: bold;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+form {
   display: flex;
   flex-direction: column;
+}
+
+button,
+a {
+  font-weight: bold;
+  font-size: 0.79em;
+  text-transform: uppercase;
+  appearance: none;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.deliveries-form {
+  margin: var(--content-spacing);
+}
+
+.deliveries-form select {
+  margin: 5px 0px;
+}
+
+.delivered {
+  margin-left: auto;
+}
+
+.page {
+  padding: 20px 40px;
+  max-width: var(--content-width);
+}
+
+.back-button {
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.return-home-button {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: #fff;
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  margin: var(--content-spacing);
+  color: var(--text-gray);
+}
+
+.card-body {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card-body div + div {
+  margin-left: auto;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card.card-confirmed {
+  background-color: var(--bg-confirmed);
+}
+
+.card.card-scheduled {
+  background-color: var(--bg-scheduled);
+}
+
+.card.card-at-restaurant {
+  background-color: var(--bg-at-restaurant);
+}
+
+.card.card-picked-up {
+  background-color: var(--bg-picked-up);
+}
+
+.card.card-at-client {
+  background-color: var(--bg-at-client);
+}
+
+.card.card-delivered {
+  background-color: var(--bg-delivered);
+}
+
+.page-header {
+  margin: var(--content-spacing);
+}
+
+.view-items-link {
+  margin: var(--content-spacing);
 }

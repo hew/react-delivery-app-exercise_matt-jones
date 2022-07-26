@@ -5,7 +5,7 @@ import moment from 'moment-timezone';
 /**
  * @typedef Delivery
  * @type {object}
- * @property {string} id ID of the delivery
+ * @property {number} id ID of the delivery
  * @property {string} client name of the client
  * @property {string} restaurant name of the restaurant
  * @property {string} pickupAt Pickup date & time of the delivery in ISO8601
@@ -13,7 +13,7 @@ import moment from 'moment-timezone';
  * @property {string} state State the delivery is in
  * @property {string} pickupAdddress Pickup address of delivery
  * @property {string} deliveryAddress Delivery address of delivery
- * @property {OrderItems[]} orderItems Set of order items to pick up in the delivery
+ * @property {OrderItem[]} orderItems Set of order items to pick up in the delivery
  * @property {string} timeZone Timezone the delivery is in
  */
 
