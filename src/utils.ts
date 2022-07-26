@@ -9,7 +9,7 @@ export const statesMap = {
   driver_confirmed: 'You have confirmed this order.',
   driver_at_restaurant: 'You are currently at the restaurant.',
   picked_up: 'You have picked up the order',
-  driver_at_client: 'You are at current at the client.',
+  driver_at_client: 'You are at currently at the client.',
   delivered: 'Your order has been delivered',
 };
 
